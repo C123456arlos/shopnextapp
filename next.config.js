@@ -1,0 +1,19 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    images: {
+        remotePatterns: [
+            { hostname: 'images.unsplash.com' },
+            { hostname: 'plus.unsplash.com' },
+            { hostname: 'lh3.googleusercontent.com' }
+        ]
+    },
+    experimental: {
+        serverActions: true,
+
+        // {
+        //     allowedOrigins: ['my-proxy.com', '*.my-proxy.com'],
+        // },
+    },
+}
+
+module.exports = nextConfig
